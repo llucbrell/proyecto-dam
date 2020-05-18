@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>EdOz - Presentación</title>
+
+		<meta name="description" content="Presentación del programa EdOz usando Reveal.js">
+		<meta name="author" content="Lucas Cerveró">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			.img-med{
+				width:62%;
+			}
+			.img-med-2{
+				width:20%;
+			}
+			.logo-rounded{
+				width: 50px;
+				border-radius: 50%;
+			}
+			.logo-less-rounded{
+				width: 100px;
+				border-radius: 10%;
+			}
+			#img-transp-down-left{
+				width: 20%;
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 65%;
+				left: -8%;
+			}
+			#img-transp-down-left-2{
+				width: 20%;
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 45%;
+				left: -8%;
+			}
+			#img-transp-down-right-2{
+				width: 20%;
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 45%;
+				right: -8%;
+			}
+			#img-transp-up-right-2{
+				width: 18%;
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: -5%;
+				right: 10%;
+			}
+			#img-transp-three-left{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 35%;
+				left: -8%;
+			}
+			#img-transp-three-right{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 35%;
+				right: -8%;
+			}
+			#img-transp-three-center{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 55%;
+				left: 32%;
+			}
+			.img-backgr{
+				z-index: -1;
+			}
+			.img-inclinada{
+				animation: lateral-movement 6s ease-in-out 1s infinite;
+			}
+			/*.img-lista{
+				animation: back-to-front 6s linear 5s 1;
+
+			}*/
+			#img-compuesta-1{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 85%;
+				left: 42%;
+			}
+			#img-compuesta-2{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 95%;
+				left: 32%;
+			}
+			#img-compuesta-3{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 55%;
+				left: 22%;
+			}
+			#img-compuesta-4{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 95%;
+				left: 62%;
+			}
+			.img-rounded-corners{
+				border-radius: 3%;
+			}
+			#img-complete-width{
+				width: 100%;
+				height: 100%;
+				background: none;
+				border:none;
+				box-shadow: none;			
+			}
+			.img-inclinada-delay{
+				animation: lateral-movement 6s ease-in-out 10s infinite;
+			}
+			
+			@keyframes lateral-movement {
+				25%   {-webkit-transform: rotateY(-10deg);
+					-webkit-transform-style: preserve-3d;
+				transform: rotateY(-10deg);
+				transform-style: preserve-3d;
+				}
+				50% {-webkit-transform: rotateY(-70deg);
+				-webkit-transform-style: preserve-3d;
+				transform: rotateY(-70deg);
+				transform-style: preserve-3d;
+				}
+				75%   {-webkit-transform: rotateY(-10deg);
+				-webkit-transform-style: preserve-3d;
+				transform: rotateY(-10deg);
+				transform-style: preserve-3d;
+				}
+			}
+			@keyframes back-to-front {
+				from {z-index: -1;}
+  				to {z-index: 1;}
+			}
+			
+
+			
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>EdOz</h1>
+					<h3>Servidor REST y Cliente Web</h3>
+					<p>
+						
+						<a href="#/7/8"><img class="logo-rounded"
+						data-src="./assets/imagenes/layout_set_logo.png" 
+						alt="Logo IES Abastos"></a>
+						<a href="#/7/9"><img class="logo-less-rounded"
+						data-src="./assets/imagenes/logo.png" 
+						alt="Logo Hospital La Fe"></a>
+						<img id="img-transp-down-left"
+						data-src="./assets/imagenes/malabaresduke.png" 
+						alt="Logo Proyecto">
+						<small>
+							
+							<a href="#/7/6">Proyecto I.E.S. Abastos.</a>
+							 Desarrollo de Aplicaciones Multiplataforma por
+							<a href="#/7/10">
+								 Lucas Cerveró Beltrán.</a> Tutorizado por Pau Villanueva
+							</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+					<h2>El Proyecto</h2>
+					<p>
+						Necesitamos una forma sencilla de que los Sanitarios gestionen los cursos y jornadas
+						que organizan. 
+					</p>
+					<img id="img-transp-up-right-2" class="img-inclinada img-backgr"
+					data-src="./assets/imagenes/puzzle_edoz.png" 
+					alt="Logo Proyecto">
+			
+					<p>
+						Por razones de seguridad y protección de datos, no podemos usar Google Forms, ni otro
+						software propietario. 
+					</p>
+					</section>
+					<section>
+						<h3>Objetivos funcionales</h3>
+						<p>
+							Con ella se ayuda a los profesionales a crear y gestionar cursos que posteriormente se realizarán en las aulas. 
+						</p>
+						<p>
+							También debe ayudar a los alumnos a buscar, mantenerse informados y apuntarse a cursos de manera cómoda.
+						</p>
+						<img id="img-transp-down-left" class="img-backgr"
+						data-src="./assets/imagenes/Duke-diana-min.png" 
+						alt="Logo Proyecto">
+						</section>
+						<section>
+							<h3>Diseño</h3>
+							<p>
+							Debe cumplir unos mínimos exigibles
+							</p>
+							<ol>
+								<li class="fragment fade-in">
+									Diferentes tipos de usuarios</li>
+								<img id="img-transp-three-left" 
+								class="fragment fade-in-then-out img-lista img-med img-rounded-corners"
+					data-src="./assets/imagenes/cap1.png" 
+					alt="Logo Proyecto">
+								<img id="img-transp-three-center" 
+								class="fragment fade-in-then-out img-lista img-med img-rounded-corners"
+					data-src="./assets/imagenes/cap3.png" 
+					alt="Logo Proyecto">
+					
+								<li class="fragment fade-in">Ser una aplicación multidispositvo</li>
+					<div  class="fragment fade-in-then-out img-lista">			
+					<img id="img-transp-three-center" style="width: 51%; top: 75%; left: 17%; z-index: 2;"
+					data-src="./assets/imagenes/cap2.png" 
+					alt="Logo Proyecto">
+					<img id="img-transp-three-center" style="width: 55%; top: 70%; left: 15%; z-index: -1;"
+					data-src="./assets/imagenes/lcd.png" 
+					alt="Logo Proyecto">
+
+						
+						<img id="img-transp-three-center" style="width: 12%; height: 53%; top: 78%; left: 3%; z-index: 2;"
+						data-src="./assets/imagenes/cap6.png" 
+						alt="Logo Proyecto">
+						<img id="img-transp-three-center" style="width:18%; height: 71%; top: 69%; left: 0%; z-index: -1;"
+						data-src="./assets/imagenes/phone.png" 
+						alt="Logo Proyecto">
+
+
+						<img id="img-transp-three-center" style="width: 16%; height: 48%; top: 80%; left: 70%; z-index: 2;"
+						data-src="./assets/imagenes/cap7.png" 
+						alt="Logo Proyecto">
+						<img id="img-transp-three-center" style="width:20%; top: 75%; left: 68%; z-index: -1;"
+						data-src="./assets/imagenes/tablet.png" 
+						alt="Logo Proyecto">
+
+
+				</div>
+								
+					
+								<li class="fragment fade-in">Adaptarse a las exigencias técnicas y tecnológicas del Hospital</li>
+					<!--		<div class="fragment fade-in">	
+							
+								<img id="img-compuesta-1" 
+					data-src="./assets/imagenes/a2.png" 
+					alt="Logo Proyecto">
+					<img id="img-compuesta-3" 
+					data-src="./assets/imagenes/dj.png" 
+					class="img-bgr"
+					alt="Logo Proyecto">
+					<img id="img-compuesta-2" 
+					data-src="./assets/imagenes/tc1.png" 
+					alt="Logo Proyecto">
+						</div>-->
+							</ol>
+						</section>
+					
+				</section>
+				
+				
+
+			
+
+				<section>
+					<section>
+						<h2>Diseño Técnico</h2>
+						<p>
+							Tanto en el servidor como en el cliente 
+							hay que diseñar multitud de 
+							elementos. 
+						</p>
+						<p>
+							Dado que esta es una tarea que puede provocar errores graves en la
+							construcción de software, se utilizan los patrones.
+						</p>
+						<div style="background-color: rgba(0, 0, 0, 0.9); 
+					color: #fff; padding: 20px;" class="fragment fade-in">
+						<small>	
+							La lógica, la estructura de los datos, la estructura del código
+							 el manejo de los datos, el envío de mensajes, el API,
+							 son sólo algunos elementos a diseñar.
+
+						</small></div>
+						<img id="img-transp-down-left" class="img-backgr"
+						data-src="./assets/imagenes/Duke_Blueprint.png" 
+						alt="Logo Proyecto">
+					</section>
+					<section>
+						<h3>Patrones en el servidor</h3>
+						<p>
+							El diseño del servidor se hizo por capas, cada una de ellas
+							encargada de una función en particular e interactúa sólo 
+							con sus colindantes. 
+						</p>
+						<div style="background-color: rgba(0, 0, 0, 0.9); 
+					color: #fff; padding: 20px;" class="fragment fade-in">
+						<small>
+							Esta forma de estructurar el trabajo permite reducir los problemas a problemas
+							más pequeños y simples, permitiendo una mejor aproximación. 
+						</small>
+						</div>
+						<img id="img-transp-down-left" style="width: 30%; left: 68%;" class="img-backgr"
+						data-src="./assets/imagenes/pipes.gif" 
+						alt="Logo Proyecto">
+					</section>
+					<section>
+						<h3>La API</h3>
+						<p>
+							Se utiliza para definir un patrón 
+							de implementación de sistemas en red y/o para definir 
+							sistemas distribuidos.
+						</p>
+						<p>
+							Es uno de los patrones más utilizados actualmente. Se fundamenta en
+							construir aplicaciones CRUD usando algunos métodos del protocolo 
+							de red http.
+						</p>
+						
+						<img id="img-transp-down-left" style="width: 30%;top: 70%;" class="img-backgr"
+						data-src="./assets/imagenes/duke_lupa_nodos.png" 
+						alt="Logo Proyecto">
+					</section>
+					<section>
+						<h3>DAO</h3>
+						<p>
+							Es un objeto de acceso a datos, un componente 
+							que suministra una interfaz común y uno o más o dispositivos 
+							de almacenamiento de datos.
+						</p>
+
+						<p>
+							Los objetos de acceso a datos pueden 
+							usarse para aislar una aplicación de la tecnología de persistencia subyacente
+						</p>
+						
+						<img id="img-transp-down-left" style="width: 30%; top: -20%;" class="img-backgr"
+						data-src="./assets/imagenes/duke_archiv.png" 
+						alt="Logo Proyecto">
+					</section>
+					<section data-background="./assets/imagenes/modeloA_blk.png">
+					
+						<div class="fragment fade-in-then-out" style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h3>El modelo de datos</h3>
+							<p>Ante las exigencias tecnológicas tanto de la empresa como del cliente,
+								se apostó por el modelo relacional.
+							</p>
+							<p>Se diseñó el siguiente esquema
+							</p>
+						</div>
+						<div  class="fragment fade-in" style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<img id="img-complete-width" style="width: 70%;" class="img-backgr"
+							data-src="./assets/imagenes/modelo.png" 
+							alt="Logo Proyecto">
+						</div>
+						
+					</section>
+					
+					<section>
+						<h3>La estructura final del servidor</h3>
+						
+						
+						<img id="img-complete-width" class="img-backgr"
+						style="width: 70%;"data-src="./assets/imagenes/server_schema.png" 
+										alt="Logo Proyecto">
+										
+					</section>
+					
+				</section>
+				<section>
+				<section>
+					<h2>característicasi del cliente</h2>
+					<h3>(Web)</h3>
+					<p>
+						Por sus particularidades, en el cliente tienen que exigirse
+						características distintas a las del servidor. 
+					</p>
+					<p>
+						Actualmente, y dada la arquitectura de los navegadores se utilizan
+						"frameworks" que aportan algunas de las características necesarias. 
+					</p>
+					
+					<small class="fragment fade-in">
+						Para este proyecto se busca ...
+					</small>
+					<img id="img-transp-down-left" style="width: 30%; top: 8%; left: 80%;" class="img-backgr"
+					data-src="./assets/imagenes/duke_frontend.png" 
+					alt="Logo Proyecto">
+				</section>
+				<section>
+					<h3>Reutilización de elementos</h3>
+					<p>
+						Permite un desarrollo de aplicaciones más ágil.
+					</p>
+					<p>
+						También permite la Reutilización
+						de las diferentes partes del interfaz en varios proyectos distintos
+						sin realizar cambios en el código.
+					</p>
+					<small class="fragment fade-in">
+						Esto se consigue mediante los Componentes Web.
+					</small>
+				<!--	<img id="img-transp-down-left" class="img-backgr"
+					data-src="./assets/imagenes/Plug_npm_nodejs.png" 
+					alt="Logo Proyecto">-->
+				</section>
+				<section>
+					<h3>Organización y escalado</h3>
+					<p>
+						La estructura debe permitir un escalado a futuro de la aplicación. 
+					</p>
+					<p>
+						La adición de las nuevas partes no debe interferir con las anteriores.
+					</p>
+					<small class="fragment fade-in">
+						Esto suele realizarse mediante módulos o paquetes y 
+						estructuras en forma de árbol.
+					</small>
+					<!--<img id="img-transp-down-left" class="img-backgr"
+					data-src="./assets/imagenes/Plug_npm_nodejs.png" 
+					alt="Logo Proyecto">-->
+				</section>
+				<section>
+					<h3>Versatilidad en el desarrollo</h3>
+					<p>
+						Debe ser sencillo migrar la aplicación a cualquier dispositivo, aunque 
+						estos no tengan navegador.
+					</p>
+					<div style="background-color: rgba(0, 0, 0, 0.9); 
+					color: #fff; padding: 20px;" class="fragment fade-in">
+					<small>
+						Las herramientas del entorno de desarrollo
+						de la mayoría de frameworks permiten la construcción de aplicaciones móviles mixtas, 
+						aplicaciones de escritorio, aplicciones web progresivas, 
+						programación sobre microcontroladores, asistentes de voz, etc.,
+					</small></div>
+					<img id="img-transp-down-left" style="width: 50%; top: 40%;" class="img-backgr"
+					data-src="./assets/imagenes/duke_packages_js.png" 
+					alt="Logo Proyecto">
+				</section>
+
+
+			</section>
+
+				<section>
+					<section>
+					<h2>El Entorno de desarrollo</h2><h4>En backend</h4>
+					<p>
+						Para construir el backend se utilizaron las siguientes herramientas 
+					</p>
+					<img id="img-transp-down-left" style="top: 28%; left: -1%; width: 25%;" class="img-backgr"
+					data-src="./assets/imagenes/DukeTools.png" 
+					alt="Logo Proyecto">
+			
+					
+					</section>
+					<section>
+						<h3>Open JDK</h3>
+						<p>
+						Versión "Open Source" de Java.	
+						</p>
+						
+						<img id="img-transp-down-left" style="left: 80%;" class="img-backgr"
+						data-src="./assets/imagenes/duke-java.png" 
+						alt="Logo Proyecto">
+						<small>
+						<a href="#/7/11">Página Web</a>
+						</small>
+						
+						</section>
+						<section>
+							<h3>Eclipse IDE</h3>
+							<p>
+							Entorno de desarrollo muy potente. Integra otras muchas herramientas.	
+							</p>
+							<img id="img-transp-down-left" class="img-backgr"
+							data-src="./assets/imagenes/duke-logos.png" 
+							alt="Logo Proyecto">
+							<small>
+								<a href="#/7/12">Página Web</a>
+							</small>
+							
+							</section>
+							<section>
+								<h3>Servidor Apache Tomcat</h3>
+								<p>
+									Un contenedor web con soporte de servlets y JSPs.
+								</p>
+								<img id="img-transp-down-left" style="left: 30%; top: 80%; width: 40%;" class="img-backgr"
+								data-src="./assets/imagenes/tomcat_duke2.png" 
+								alt="Logo Proyecto">
+								<small>
+									<a href="#/7/13">Página Web</a>
+								</small>
+								
+							</section>
+							<section>
+								<h3>Postgre SQL</h3>
+								<p>
+									Es un sistema de gestión de bases de datos relacional libre.	
+								</p>
+								<img id="img-transp-down-left" style="width: 30%;" class="img-backgr"
+								data-src="./assets/imagenes/duke-african-elephant-2.png" 
+								alt="Logo Proyecto">
+						<small>
+									<a href="#/7/14">Página Web</a>
+								</small>
+								
+							</section>
+							<section>
+								<h3>Librerías</h3>
+								<p>
+								Además se utilizaron las siguientes librerías para la realización 
+								del proyecto.	
+								</p>
+
+								<p>
+							<span style="display: inline-block;" class="fragment fade-right">
+								 Implementación REST/JAX-RS: </span>
+							<span style="display: inline-block;" class="fragment fade-up">
+								<a href="#/7/15">JERSEY</a> </span>
+								</p>
+
+								<p>
+							<span style="display: inline-block;" class="fragment fade-right">
+								 Serialización de datos JSON: </span>
+							<span style="display: inline-block;" class="fragment fade-up">
+								<a href="#/7/16">GSON</a> </span>
+								</p>
+
+								<p>
+									<span style="display: inline-block;" class="fragment fade-right">
+										 Envío de correos smtp: </span>
+									<span style="display: inline-block;" class="fragment fade-up">
+										<a href="#/7/17">JavaMail</a> </span>
+								</p>
+
+							
+
+								<img id="img-transp-down-left" style="left: 87%; top: 49%;" class="img-backgr"
+								data-src="./assets/imagenes/Duke_libs.png" 
+								alt="Logo Proyecto">
+						
+								
+							</section>
+							<section>
+								<h4>Ejemplo de servicio REST</h4>
+								<p>
+									Con <a href="#/7/15">Jersey</a> se puede construir un nodo REST de forma sencilla.
+							
+								<pre><code class="java" data-trim data-line-numbers="1,2|4,5|6-8|6-13">
+	import javax.ws.rs.*;
+	import es.gva.san.lafe.edoz.app.*;
+
+	@Path("/rest")
+	public class PublicAPI {
+	 @Path("/test")
+	 @GET
+	 @Produces({"application/json"})
+	 public String getTest() {
+		// conexión con nuestra aplicación
+		String pattrn = "{ \"wooow\":\"%s\"}";
+		return String.format(pattrn , miAppGetResults());
+	  }
+	}
+								</code></pre>
+								
+								</section>
+								<section>
+									
+									<h3>Estructura de la Aplicación</h3>
+									<p>
+										Finalmente, la aplicción web (servlet) con Jersey queda con la siguiente estructura.	
+									</p>
+									
+									<img id="img-complete-width" class="img-backgr"
+									style="width: 70%; top: 10%;"
+									data-src="./assets/imagenes/jersey_app.png" 
+									alt="Logo Proyecto">
+							
+								</section>
+							
+						
+							<!--
+							<section>
+								<h3>Servicio REST</h3>
+								<p>
+									Se implementaría con Jersey que no es más que, "Una
+									implementacion del patrón" usando las especificaciones
+									JAVA JAX-RS.
+							   </p>
+								
+								<img id="img-transp-down-left" class="img-backgr"
+								data-src="./assets/imagenes/duke_camata.png" 
+								alt="Logo Proyecto">
+							</section>-->
+				</section>
+			
+			
+
+				<section>
+					<section>
+					<h2>El Entorno de desarrollo</h2><h4>En frontend</h4>
+					<p>
+						Para construir el frontend se utilizaron las siguientes herramientas 
+					</p>
+					<img id="img-transp-down-left" style="width: 30%; top: 80%; left: 60%;" class="img-backgr"
+					data-src="./assets/imagenes/Plug_npm_nodejs.png" 
+					alt="Logo Proyecto">
+			
+					
+					</section>
+					<section>
+						<h3>Nodejs</h3>
+						<p>
+							Es el entorno de ejecución. 
+						</p>
+						<p></p>
+							Se encarga de ejecutar el código JavaScript, 
+							es el equivalente a un intérprete de un lenguaje de programación. 
+						</p>
+						<small class="fragment fade-in">
+							Se utilizó para hacer funcionar el framework y diversas herramientas escritas en dicho lenguaje 
+					</small>
+						
+						<pre><code class="zsh" data-trim data-trim>
+							echo 'console.log("Hola mundo con JavaScript");' | node
+							>> Hola mundo con JavaScript
+									
+							</code></pre>
+						
+						</section>
+						<section>
+							<h3>npm</h3>
+							<p>
+								El gestor de paquetes o programas. 
+							</p>
+							
+							<p>
+								También funciona como automatizador de tareas. 
+							</p>
+							<p>Reglas de uso:
+							</p>
+							
+						
+								<pre><code class="zsh" data-trim data-trim >
+								npm &lt;command&gt;
+								npm &lt;command&gt; -h  quick help on &lt;command&gt;
+								npm -l            display full usage info
+								npm help &lt;term&gt;   search for help on &lt;term&gt;
+								npm help npm      involved overview
+										
+								</code></pre>
+								<small class="fragment fade-in">
+									Se encargó de descargar los programas y sus dependencias. 
+								</small>
+							</section>
+							<section>
+								<h3>Librerías y paquetes</h3>
+								<p>
+								Además se utilizaron una serie de librerías para la realización del proyecto.	
+								</p>
+
+								<p>
+									<small>
+									<span style="display: inline-block;" class="fragment fade-right">
+										 Gestión de formularios y su comprobación: </span>
+									<span style="display: inline-block;" class="fragment fade-up">
+										<a href="#/7/19">@angular/forms</a> </span>
+									</small></p>
+								<p><small>
+									<span style="display: inline-block;" class="fragment fade-right">
+										 Administración de la navegación por la aplicación: </span>
+									<span style="display: inline-block;" class="fragment fade-up">
+										<a href="#/7/20">@angular/router</a> </span>
+									</small></p>
+								<p><small>
+									<span style="display: inline-block;" class="fragment fade-right">
+										 Creación de gráficas: </span>
+									<span style="display: inline-block;" class="fragment fade-up">
+										<a href="#/7/22">@swimlane/ngx-charts</a> </span>
+									</small></p>
+									<p><small>
+										<span style="display: inline-block;" class="fragment fade-right">
+											 Clases CSS para multidispositvo: </span>
+										<span style="display: inline-block;" class="fragment fade-up">
+											<a href="#/7/24"> bootstrap</a> </span>
+									</small></p>	
+
+
+								<img id="img-transp-down-left" style="width: 40%; top: 50%; left: -16%;" class="img-backgr"
+								data-src="./assets/imagenes/duke_log_ok.png" 
+								alt="Logo Proyecto">
+						
+								
+							</section>
+							
+							<section>
+								<h3>Angular 2</h3>
+								<p>
+									Es el framework utilizado para construir "SPA"s. 
+									(Single Page Aplications) 
+								</p>
+								<p>
+									Integra una serie de herramientas que ayudan
+									a la construcción, minificación, y testeo de las mismas.
+								</p>
+								
+								<img id="img-transp-down-left" style="top: -25%; width: 25%; left: 70%;" class="img-backgr"
+								data-src="./assets/imagenes/duke_ang_icon.png" 
+								alt="Logo Proyecto">
+						
+								
+								</section>
+								<section>
+									<h4>Angular CLI</h4>
+									<p>
+										Una herramienta de consola que sirve para generar y automatizar tareas. 
+									</p>
+									<pre><code class="zsh" data-trim data-trim>
+										ng generate component miprimercomponente
+												
+										</code></pre>
+									<p>
+										Usa webpack en segundo plano para la construcción del proyecto.
+									</p>
+									<pre><code class="zsh" data-trim data-trim >
+										ng build --prod --base-href ./
+												
+										</code></pre>
+									
+									</section>
+									<section>
+										<h4>Estructura de un Componente</h4>
+										<p>
+											Utilizando TypeScript se consiguen 
+											implementar características desables no disponibles
+											 en JavaScript.
+									
+										<pre><code class="ts" data-trim data-line-numbers="1|2-10|11-15">
+											Import { Component} from '@angular/core'; 
+											@Component({
+												selector: 'cursos',
+												template: 
+												`&lt;h3&gt;{{titulo}}&lt;/h3&gt;
+												 &lt;ul&gt;
+												    &lt;li *ngFor="let curso of cursos"&gt;
+														{{ curso }}
+													&lt;/li&gt;
+												 &lt;/ul&gt;` })
+											export class CursosComponent{
+												titulo: string = “Lista de cursos”;
+												cursos: string[] = [“curso1”,”curso2”,”curso3”]
+											}
+										</code></pre>
+										
+										</section>
+
+								<section>
+									<h2>Vs Codium</h2>
+									<p>
+										Gracias a TypeScript el editor de texto puede integrar autocompletado.
+										 
+									</p>
+									<p>
+										Además este editor integra una consola de comandos.
+									</p>
+									<small class="fragment">
+										Por eso se dice que es el IDE de la programación web.
+									</small>
+									<img id="img-transp-down-left" style="left: 80%; top: 80%;" class="img-backgr"
+									data-src="./assets/imagenes/duke_craft.png" 
+										alt="Logo Proyecto">
+									
+									</section>
+
+									<section>
+										
+										
+										<img id="img-complete-width" class="img-backgr img-inclinada-delay"
+										data-src="./assets/imagenes/vscodcap.png" 
+										alt="Logo Proyecto">
+										<img id="img-transp-down-left" style="left: 12%; width: 40%; top: 50%; z-index: 3;" class="img-backgr" style="z-index: 1;"
+										data-src="./assets/imagenes/duke_pizarra.png" 
+										alt="Logo Proyecto">
+								
+										
+										</section>
+				</section>
+				
+
+			
+			<section>
+				<section>
+					<h2>Demos y vídeos de la aplicación</h2>
+					<p>
+						A continuación se muestra un acercamiento práctico a la aplicación creada.
+					</p>
+					<img id="img-transp-down-left" style="top: 90%; left: 40%; width: 25%;" class="img-backgr"
+									data-src="./assets/imagenes/duke_video.png" 
+									alt="Logo Proyecto">
+					</section>
+				<section data-background-iframe="http://localhost:8080/EdOz/login" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;" class="fragment fade-out">
+						<h3>Demo empotrada</h3>
+						<p>Prueba de la aplicación en su totalidad.</p>
+					</div>
+				</section>
+				<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+					<div style="background-color: rgba(0, 0, 0, 0.9); 
+					color: #fff; padding: 20px;" class="fragment fade-out">
+						<p>Vídeo de ejemplo de funcionamiento de la app.</p>
+						<img id="img-transp-down-left" style="top: 80%;" class="img-backgr"
+						data-src="./assets/imagenes/duke_camera.png" 
+						alt="Logo Proyecto">	
+					</div>
+						
+						
+				</section>
+				<section data-background="https://media.giphy.com/media/dbtDDSvWErdf2/giphy.gif">
+					<h2>Fin!</h2>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h2>Recursos</h2>
+					<p>
+						Enlaces, libros de referencia y otros recursos integrados.
+					</p>
+					</section>
+					<img id="img-compuesta-3" style="width: 10%; left: 80%; top: 60%;"
+					data-src="./assets/imagenes/dj.png" 
+					class="img-bgr"
+					alt="Logo Proyecto">
+					<section>
+						<h3>El Proyecto</h3>
+						<small>
+						<a href="https://drive.google.com/open?id=1mIx4F6EpyhDk31iKX0pbrXU705fepdt5"
+						 target="_blank">| Pdf del proyecto </a>
+						<a href="http://llucbrell.github.io/PWCV/"  target="_blank">| Vídeo de demostración</a> 
+						<a href="#" target="_blank">| Despliegue de la aplicación </a>
+						<a href="https://drive.google.com/file/d/1CmOjPeq7G3S6JRU_PRpomFSO9pljHhIo/view"
+						 target="_blank">| Pdf Selección de tecnologías |</a>
+					</small>
+	
+						</section>
+
+					<section>
+					<h3>Recursos Web</h3>
+					<small>
+					<a href="http://mestreacasa.gva.es/web/4602504000" target="_blank">| Abastos</a>
+					<a href="http://www.lafe.san.gva.es/" target="_blank">| La Fe</a>
+					<a href="http://llucbrell.github.io/PWCV/"  target="_blank">| Autor</a> 
+					<a href="https://openjdk.java.net/" target="_blank">| Open JDK</a>
+					<a href="https://www.eclipse.org/"  target="_blank">| Eclipse</a> 
+					<a href="https://tomcat.apache.org/" target="_blank">| Tomcat</a>
+					<a href="https://www.postgresql.org/"  target="_blank">| Postgre SQL</a> 
+					<a href="https://eclipse-ee4j.github.io/jersey/"  target="_blank">| Jersey</a> 
+					<a href="https://github.com/google/gson/" target="_blank">| Gson</a>
+					<a href="https://javaee.github.io/javamail/"  target="_blank">| JavaMail</a> 
+					<a href="https://angular.io/"  target="_blank">| Angular</a> 
+					<a href="https://angular.io/api/forms"  target="_blank">| Ng Forms</a> 
+					<a href="https://angular.io/api/router" target="_blank">| Ng Router</a>
+					<a href="https://cli.angular.io/"  target="_blank">| Angular CLI</a> 
+					<a href="https://swimlane.gitbook.io/ngx-charts/" target="_blank">| Ngx Charts</a>
+					<a href="https://vscodium.com/"  target="_blank">| Vs Codium |</a> 
+					</small>
+					
+					</section>
+					<section>
+						<h3>Bibliografía I</h3>
+						<p>
+						<small><a href="https://www.amazon.com/ng-book-Complete-Angular-Nate-Murray/dp/0991344618" target="_blank">	
+						ng-book The Complete Book on Angular 4. Murray Nate, Coury Felipe, Lerner Ari, and Taborda Carlos. 2017. San Francisco, California
+						</a></small></p>
+						<p>
+						<small><a href="https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN" target="_blank">	
+						Angular 2 From Theory To Practice. Hussain Asim. 2016. S.P. S.ISBN
+						</a></small></p>
+						<p>
+						<small><a href="https://www.oreilly.com/library/view/pro-angular-second/9781484223079/" target="_blank">	
+						Pro Angular, Second Edition. Freeman Adam. 2017. MILTON KEYNES MK6 3PA, United Kingdom. ISBN-13 (pbk): 978-1-4842-2306-2
+						</a></small>
+						</p>
+						<p>
+						<small><a href="https://www.apress.com/gp/book/9781484226643" target="_blank">	
+						Pro RESTful APIs: Design, Build and Integrate with REST, JSON, XML and JAX-RS. Sanjay Patni. Santa Clara, California, USA. 2017.ISBN-13 (pbk): 978-1-4842-2664-3						</a></small></p>
+						<p>
+						<small><a href="https://www.apress.com/gp/book/9781430267904" target="_blank">	
+						Pro TypeScript: Application-Scale JavaScript Development. Fenton Steve. 2018. United Kingdom. ISBN-13 (pbk): 978-1-4842-3248-4						
+						</a></small></p>
+						<p>
+						<small><a href="https://www.packtpub.com/application-development/developing-restful-web-services-jersey-20" target="_blank">	
+						Developing RESTful Web Services with Jersey 2.0. Sunil Gulabani. 2014. Birmingham B3 2PB, UK. ISBN 978-1-78328-829-8						
+						</a></small></p>
+						<small><a href="https://www.amazon.com/Complete-Log4j-Manual-Ceki-Gulcu/dp/2970036908" target="_blank">	
+							The Complete log4j Manual. Ceki Gülcü. 2002. S.P. S.ISBN
+						</a></small></p>
+					</section>
+						<section>
+							<h3>Bibliografía II</h3>
+				
+						
+						<small><a href="https://www.oreilly.com/library/view/data-visualization-with/9781457189869/" target="_blank">	
+							Data Visualization with JavaScript. Stephen A. Thomas. 2015. USA. ISBN-10: 1-59327-605-2, ISBN-13: 978-1-59327-605-8						
+						</a></small></p>
+						<small><a href="https://tomcat.apache.org/tomcat-9.0-doc/" target="_blank">	
+							Documentación Oficial del Proyecto Apache Tomcat. S.F. The Apache Software Foundation. https://tomcat.apache.org/tomcat-9.0-doc/						
+						</a></small></p>
+						<small><a href="https://stackoverflow.com/questions" target="_blank">	
+							Respuestas sobre Java, TypeScript, Angular 2 y Apache Tomcat. S.F. StackOverflow. https://stackoverflow.com/questions
+						</a></small></p>
+						<small><a href="https://help.eclipse.org/2019-12/index.jsp" target="_blank">	
+							Documentación Oficial del Proyecto Eclipse. 2019. Eclipse Foundation. https://help.eclipse.org/2019-12/index.jsp
+						</a></small></p>
+						<small><a href="https://angular.io/docs/" target="_blank">	
+							Documentación Oficial del Framework Angular. S.F. Google. https://angular.io/docs/
+						</a></small></p>
+						<small><a href="https://linux.die.net/man/" target="_blank">	
+							Páginas del Manual de Linux, vía online y vía terminal. S.F. Linux. https://linux.die.net/man/
+						</a></small></p>
+
+
+
+						</section>
+
+
+
+
+					<section>
+						<h3>Iframes</h3>
+						<p>
+							A continuación se presentan todos los enlaces y recursos integrados en la presentación.
+						</p>
+						
+						</section>
+
+				<section data-background-iframe="https://drive.google.com/file/d/1mIx4F6EpyhDk31iKX0pbrXU705fepdt5/preview" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0;
+						box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+						background-color: rgba(0, 0, 0, 0.9);
+						 color: #fff; padding: 20px;
+						 font-size: 20px; text-align: left;">
+							<h3>Proyecto D.A.M.</h3>
+							<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+						</div>
+					</section>
+					<section data-background-iframe="https://drive.google.com/file/d/1CmOjPeq7G3S6JRU_PRpomFSO9pljHhIo/preview" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0;
+						box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+						background-color: rgba(0, 0, 0, 0.9);
+						 color: #fff; padding: 20px;
+						 font-size: 20px; text-align: left;">
+							<h3>Selección de tecnologías</h3>
+							<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+						</div>
+					</section>	
+
+				<section data-background-iframe="http://mestreacasa.gva.es/web/4602504000" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Escuela</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="http://www.lafe.san.gva.es/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Hospital</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="http://llucbrell.github.io/PWCV/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Autor</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Open JDK</h3>
+						<p>Esta web no admite iframes, puedes visitarla directamente ...</p>
+						<p><a href="https://openjdk.java.net/" target="blank">Aquí</a></p>
+						<p><a href="#/4/1">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Eclipse</h3>
+						<p>Esta web no admite iframes, puedes visitarla directamente ...</p>
+						<p><a href="https://www.eclipse.org/" target="blank">Aquí</a></p>
+						<p><a href="#/4/2">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://tomcat.apache.org/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Tomcat</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>postgre SQL</h3>
+						<p>Esta web no admite iframes, puedes visitarla directamente ...</p>
+						<p><a href="https://www.postgresql.org/" target="blank">Aquí</a></p>
+						<p><a href="#/4/4">Alt + Cursor Izquierdo => Volver</a></p>					</div>
+				</section>
+				<section data-background-iframe="https://eclipse-ee4j.github.io/jersey/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Jersey</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>GSON</h3>
+						<p>Esta web no admite iframes, puedes visitarla directamente ...</p>
+						<p><a href="https://github.com/google/gson/" target="blank">Aquí</a></p>
+						<p><a href="#/4/5">Alt + Cursor Izquierdo => Volver</a></p>		
+					</div>
+				</section>
+				<section data-background-iframe="https://javaee.github.io/javamail/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Java Mail</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://angular.io/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Angular</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://angular.io/api/forms" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Angular Forms</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://angular.io/api/router" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Angular Router</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://cli.angular.io/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Angular CLI</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://swimlane.gitbook.io/ngx-charts/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>NGX Charts</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://vscodium.com/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>VS Codium</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://getbootstrap.com/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Bootstrap</h3>
+						<p><a href="#">Alt + Cursor Izquierdo => Volver</a></p>
+					</div>
+				</section>
+				
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+				
+				<section data-background="https://media.giphy.com/media/7LO7q5KcXawaQ/giphy.gif">
+					<h2>Fin!</h2>
+				</section>
+			</section>
+			<section data-background="https://media.giphy.com/media/28HuTvEHje7v1ngGAm/giphy.gif">
+				<h2>Fin!</h2>
+			</section>
+
+
+
+
+
+				<!-- FIN  -->
+		
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
