@@ -228,25 +228,23 @@
 					<section>
 					<h2>El Proyecto</h2>
 					<p>
-						Necesitamos una forma sencilla de que los Sanitarios gestionen los cursos y jornadas
-						que organizan. 
-					</p>
+						El proyecto nace de una necesidad de gestión de cursos y jornadas organizados por los sanitarios en el hospital.
+							</p>
 					<img id="img-transp-up-right-2" class="img-inclinada img-backgr"
 					data-src="./assets/imagenes/puzzle_edoz.png" 
 					alt="Logo Proyecto">
 			
 					<p>
-						Por razones de seguridad y protección de datos, no podemos usar Google Forms, ni otro
-						software propietario. 
+						Por razones de seguridad y protección de datos, se llega a la conclusión de no utilizar software propietario de ningún tipo.
 					</p>
 					</section>
 					<section>
 						<h3>Objetivos funcionales</h3>
 						<p>
-							Con ella se ayuda a los profesionales a crear y gestionar cursos que posteriormente se realizarán en las aulas. 
+							La aplicación debería ayudar a los profesionales a crear y gestionar los cursos que posteriormente se realizarán en las aulas. 
 						</p>
 						<p>
-							También debe ayudar a los alumnos a buscar, mantenerse informados y apuntarse a cursos de manera cómoda.
+							También debe ayudar a los alumnos a buscar, inscribirse y mantenerse informados de los nuevos cursos de manera cómoda y sencilla.
 						</p>
 						<img id="img-transp-down-left" class="img-backgr"
 						data-src="./assets/imagenes/Duke-diana-min.png" 
@@ -259,7 +257,7 @@
 							</p>
 							<ol>
 								<li class="fragment fade-in">
-									Diferentes tipos de usuarios</li>
+									Diferentes tipos de usuarios y roles</li>
 								<img id="img-transp-three-left" 
 								class="fragment fade-in-then-out img-lista img-med img-rounded-corners"
 					data-src="./assets/imagenes/cap1.png" 
@@ -269,7 +267,7 @@
 					data-src="./assets/imagenes/cap3.png" 
 					alt="Logo Proyecto">
 					
-								<li class="fragment fade-in">Ser una aplicación multidispositvo</li>
+								<li class="fragment fade-in">Debe ser una aplicación multidispositvo</li>
 					<div  class="fragment fade-in-then-out img-lista">			
 					<img id="img-transp-three-center" style="width: 51%; top: 75%; left: 17%; z-index: 2;"
 					data-src="./assets/imagenes/cap2.png" 
@@ -298,7 +296,7 @@
 				</div>
 								
 					
-								<li class="fragment fade-in">Adaptarse a las exigencias técnicas y tecnológicas del Hospital</li>
+								<li class="fragment fade-in">Tiene que adaptarse a las exigencias técnicas y tecnológicas del Hospital</li>
 					<!--		<div class="fragment fade-in">	
 							
 								<img id="img-compuesta-1" 
@@ -323,10 +321,10 @@
 
 				<section>
 					<section>
-						<h2>Diseño Técnico</h2>
+						<h2>Arquitectura</h2>
 						<p>
 							Tanto en el servidor como en el cliente 
-							hay que diseñar multitud de 
+							hay que estructurar y ensamblar multitud de 
 							elementos. 
 						</p>
 						<p>
@@ -348,15 +346,15 @@
 					<section>
 						<h3>Patrones en el servidor</h3>
 						<p>
-							El diseño del servidor se hizo por capas, cada una de ellas
-							encargada de una función en particular e interactúa sólo 
+							El servidor se estructuró por capas, cada una de ellas
+							es la encargada de una función en particular. Estas capas interactuarán sólo 
 							con sus colindantes. 
 						</p>
 						<div style="background-color: rgba(0, 0, 0, 0.9); 
 					color: #fff; padding: 20px;" class="fragment fade-in">
 						<small>
-							Esta forma de estructurar el trabajo permite reducir los problemas a problemas
-							más pequeños y simples, permitiendo una mejor aproximación. 
+							Esta forma de organizar el proyecto, permite coceptualizar los programas en partes
+							pequeñas, más simples y fáciles de entender. 
 						</small>
 						</div>
 						<img id="img-transp-down-left" style="width: 30%; left: 68%;" class="img-backgr"
@@ -366,15 +364,21 @@
 					<section>
 						<h3>La API</h3>
 						<p>
-							Se utiliza para definir un patrón 
-							de implementación de sistemas en red y/o para definir 
+							Es un patrón de comunicación utilizado para definir
+							la implementación de sistemas en red y/o para definir 
 							sistemas distribuidos.
 						</p>
 						<p>
-							Es uno de los patrones más utilizados actualmente. Se fundamenta en
+							Es muy utilizado actualmente y se fundamenta en
 							construir aplicaciones CRUD usando algunos métodos del protocolo 
 							de red http.
 						</p>
+						<div style="background-color: rgba(0, 0, 0, 0.9); 
+					color: #fff; padding: 20px;" class="fragment fade-in">
+						<small>
+							Se escogió por ser fácilmente reconocible por la mayoría de los equipos de T.I. 
+						</small>
+						</div>
 						
 						<img id="img-transp-down-left" style="width: 30%;top: 70%;" class="img-backgr"
 						data-src="./assets/imagenes/duke_lupa_nodos.png" 
@@ -404,7 +408,7 @@
 							<p>Ante las exigencias tecnológicas tanto de la empresa como del cliente,
 								se apostó por el modelo relacional.
 							</p>
-							<p>Se diseñó el siguiente esquema
+							<p>Se diseñó el siguiente esquema ...
 							</p>
 						</div>
 						<div  class="fragment fade-in" style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
@@ -431,13 +435,10 @@
 					<h2>característicasi del cliente</h2>
 					<h3>(Web)</h3>
 					<p>
-						Por sus particularidades, en el cliente tienen que exigirse
-						características distintas a las del servidor. 
+						Al modelar la interfaz de usuario de la aplicación, se buscó cumplir
+						una serie de requerimientos distintos a los impuestos en el servidor. 
 					</p>
-					<p>
-						Actualmente, y dada la arquitectura de los navegadores se utilizan
-						"frameworks" que aportan algunas de las características necesarias. 
-					</p>
+					
 					
 					<small class="fragment fade-in">
 						Para este proyecto se busca ...
@@ -449,15 +450,15 @@
 				<section>
 					<h3>Reutilización de elementos</h3>
 					<p>
-						Permite un desarrollo de aplicaciones más ágil.
+						Permitir un desarrollo de aplicaciones más ágil.
 					</p>
 					<p>
-						También permite la Reutilización
-						de las diferentes partes del interfaz en varios proyectos distintos
+						También facilita reutilizar
+						diferentes partes del interfaz en proyectos distintos
 						sin realizar cambios en el código.
 					</p>
 					<small class="fragment fade-in">
-						Esto se consigue mediante los Componentes Web.
+						Como veremos más adelante, esto se logra usando Componentes Web.
 					</small>
 				<!--	<img id="img-transp-down-left" class="img-backgr"
 					data-src="./assets/imagenes/Plug_npm_nodejs.png" 
@@ -466,13 +467,13 @@
 				<section>
 					<h3>Organización y escalado</h3>
 					<p>
-						La estructura debe permitir un escalado a futuro de la aplicación. 
+						La estructura del cliente debe permitir un fácil escalado de la aplicación. 
 					</p>
 					<p>
-						La adición de las nuevas partes no debe interferir con las anteriores.
+						 La adición de las nuevas partes debe ser lo más independiente posible y no debe interferir con el código ya creado.
 					</p>
 					<small class="fragment fade-in">
-						Esto suele realizarse mediante módulos o paquetes y 
+						Esto suele realizarse mediante módulos y 
 						estructuras en forma de árbol.
 					</small>
 					<!--<img id="img-transp-down-left" class="img-backgr"
@@ -488,7 +489,7 @@
 					<div style="background-color: rgba(0, 0, 0, 0.9); 
 					color: #fff; padding: 20px;" class="fragment fade-in">
 					<small>
-						Las herramientas del entorno de desarrollo
+						Las herramientas
 						de la mayoría de frameworks permiten la construcción de aplicaciones móviles mixtas, 
 						aplicaciones de escritorio, aplicciones web progresivas, 
 						programación sobre microcontroladores, asistentes de voz, etc.,
@@ -836,7 +837,7 @@
 									<section>
 										
 										
-										<img id="img-complete-width" class="img-backgr img-inclinada-delay"
+										<img id="img-complete-width" 
 										data-src="./assets/imagenes/vscodcap.png" 
 										alt="Logo Proyecto">
 										<img id="img-transp-down-left" style="left: 12%; width: 40%; top: 50%; z-index: 3;" class="img-backgr" style="z-index: 1;"
