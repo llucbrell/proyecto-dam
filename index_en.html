@@ -1,0 +1,1295 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>EdOz - Slides</title>
+
+		<meta name="description" content="Presentación del programa EdOz usando Reveal.js">
+		<meta name="author" content="Lucas Cerveró">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			.img-med{
+				width:62%;
+			}
+			.img-med-2{
+				width:20%;
+			}
+			.logo-rounded{
+				width: 50px;
+				border-radius: 50%;
+			}
+			.logo-less-rounded{
+				width: 100px;
+				border-radius: 10%;
+			}
+			#img-transp-down-left{
+				width: 20%;
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 65%;
+				left: -8%;
+			}
+			#img-transp-down-left-2{
+				width: 20%;
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 45%;
+				left: -8%;
+			}
+			#img-transp-down-right-2{
+				width: 20%;
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 45%;
+				right: -8%;
+			}
+			#img-transp-up-right-2{
+				width: 18%;
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: -5%;
+				right: 10%;
+			}
+			#img-transp-three-left{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 35%;
+				left: -8%;
+			}
+			#img-transp-three-right{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 35%;
+				right: -8%;
+			}
+			#img-transp-three-center{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 55%;
+				left: 32%;
+			}
+			.img-backgr{
+				z-index: -1;
+			}
+			.img-inclinada{
+				animation: lateral-movement 6s ease-in-out 1s infinite;
+			}
+			/*.img-lista{
+				animation: back-to-front 6s linear 5s 1;
+
+			}*/
+			#img-compuesta-1{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 85%;
+				left: 42%;
+			}
+			#img-compuesta-2{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 95%;
+				left: 32%;
+			}
+			#img-compuesta-3{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 55%;
+				left: 22%;
+			}
+			#img-compuesta-4{
+				background: none;
+				border:none;
+				box-shadow: none;
+				position: absolute;
+				top: 95%;
+				left: 62%;
+			}
+			.img-rounded-corners{
+				border-radius: 3%;
+			}
+			#img-complete-width{
+				width: 100%;
+				height: 100%;
+				background: none;
+				border:none;
+				box-shadow: none;			
+			}
+			.img-inclinada-delay{
+				animation: lateral-movement 6s ease-in-out 10s infinite;
+			}
+			
+			@keyframes lateral-movement {
+				25%   {-webkit-transform: rotateY(-10deg);
+					-webkit-transform-style: preserve-3d;
+				transform: rotateY(-10deg);
+				transform-style: preserve-3d;
+				}
+				50% {-webkit-transform: rotateY(-70deg);
+				-webkit-transform-style: preserve-3d;
+				transform: rotateY(-70deg);
+				transform-style: preserve-3d;
+				}
+				75%   {-webkit-transform: rotateY(-10deg);
+				-webkit-transform-style: preserve-3d;
+				transform: rotateY(-10deg);
+				transform-style: preserve-3d;
+				}
+			}
+			@keyframes back-to-front {
+				from {z-index: -1;}
+  				to {z-index: 1;}
+			}
+			
+
+			
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>EdOz</h1>
+					<h3>REST server and Web Client</h3>
+					<p>
+						
+						<a href="http://mestreacasa.gva.es/web/4602504000" target="blank">
+							<img title="Web IES Abastos" class="logo-rounded"
+						data-src="./assets/imagenes/layout_set_logo.png" 
+						alt="Logo IES Abastos"></a>
+						<a href="http://www.lafe.san.gva.es" target="blank">
+							<img title="Web Hospital La Fe" class="logo-less-rounded"
+						data-src="./assets/imagenes/logo.png" 
+						alt="Logo Hospital La Fe"></a>
+						<img id="img-transp-down-left"
+						data-src="./assets/imagenes/malabaresduke.png" 
+						alt="Logo Proyecto">
+						<small>
+							
+							Multiplatform development <a href="#/7/6">Project</a> by
+							<a href="#/7/2">
+								 Lucas Cerveró Beltrán.</a> Pau Villanueva as mentor
+							</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+					<h2>The Project</h2>
+					<p>
+
+						The hospital needs an intranet course platform system for the helthcare professionals. 
+							</p>
+					<img id="img-transp-up-right-2" class="img-inclinada img-backgr"
+					data-src="./assets/imagenes/puzzle_edoz.png" 
+					alt="Logo Proyecto">
+			
+					<p>
+						Because of security and data protection, the hospital take the decission of build its own solution. It's not a good idea to use a propietary software.
+
+					</p>
+					</section>
+					<section>
+						<h3>Goals</h3>
+						<p>
+							The application must help healthcare professionals to create courses that they impart later in the classroom. The app must help them to admin, and attach a survey to the courses. 
+						</p>
+						<p>
+							The software also must help the students, to find, sing in and get informed about hospital courses in an easy way. 
+						</p>
+						<img id="img-transp-down-left" class="img-backgr"
+						data-src="./assets/imagenes/Duke-diana-min.png" 
+						alt="Logo Proyecto">
+						</section>
+						<section>
+							<h3>Design</h3>
+							<p>
+							Must accomplish this minimums
+							</p>
+							<ol>
+								<li class="fragment fade-in">
+									Diferent kinds of users and roles</li>
+								<img id="img-transp-three-left" 
+								class="fragment fade-in-then-out img-lista img-med img-rounded-corners"
+					data-src="./assets/imagenes/cap1.png" 
+					alt="Logo Proyecto">
+								<img id="img-transp-three-center" 
+								class="fragment fade-in-then-out img-lista img-med img-rounded-corners"
+					data-src="./assets/imagenes/cap3.png" 
+					alt="Logo Proyecto">
+					
+								<li class="fragment fade-in">Must be a Multiplatform app </li>
+					<div  class="fragment fade-in-then-out img-lista">			
+					<img id="img-transp-three-center" style="width: 51%; top: 75%; left: 17%; z-index: 2;"
+					data-src="./assets/imagenes/cap2.png" 
+					alt="Logo Proyecto">
+					<img id="img-transp-three-center" style="width: 55%; top: 70%; left: 15%; z-index: -1;"
+					data-src="./assets/imagenes/lcd.png" 
+					alt="Logo Proyecto">
+
+						
+						<img id="img-transp-three-center" style="width: 12%; height: 53%; top: 78%; left: 3%; z-index: 2;"
+						data-src="./assets/imagenes/cap6.png" 
+						alt="Logo Proyecto">
+						<img id="img-transp-three-center" style="width:18%; height: 71%; top: 69%; left: 0%; z-index: -1;"
+						data-src="./assets/imagenes/phone.png" 
+						alt="Logo Proyecto">
+
+
+						<img id="img-transp-three-center" style="width: 16%; height: 48%; top: 80%; left: 70%; z-index: 2;"
+						data-src="./assets/imagenes/cap7.png" 
+						alt="Logo Proyecto">
+						<img id="img-transp-three-center" style="width:20%; top: 75%; left: 68%; z-index: -1;"
+						data-src="./assets/imagenes/tablet.png" 
+						alt="Logo Proyecto">
+
+
+				</div>
+								
+					
+								<li class="fragment fade-in">
+									Must fit in the hospital technological ecosystem.</li>
+					<!--		<div class="fragment fade-in">	
+							
+								<img id="img-compuesta-1" 
+					data-src="./assets/imagenes/a2.png" 
+					alt="Logo Proyecto">
+					<img id="img-compuesta-3" 
+					data-src="./assets/imagenes/dj.png" 
+					class="img-bgr"
+					alt="Logo Proyecto">
+					<img id="img-compuesta-2" 
+					data-src="./assets/imagenes/tc1.png" 
+					alt="Logo Proyecto">
+						</div>-->
+							</ol>
+						</section>
+					
+				</section>
+				
+				
+
+			
+
+				<section>
+					<section>
+						<h2>Architecture</h2>
+						<p>
+							The Client and the Server must be structured in a correct way.
+						</p>
+						<p>
+							If we made this task wrong, we can create big errors. To avoid it we'll use software patterns. 
+						</p>
+						<div style="background-color: rgba(0, 0, 0, 0.9); 
+					color: #fff; padding: 20px;" class="fragment fade-in">
+						<small>	
+							The logic, the data structure, the code structure, the data management, the message system, the API, they are only some of the elements to design.
+						
+
+						</small></div>
+						<img id="img-transp-down-left" class="img-backgr"
+						data-src="./assets/imagenes/Duke_Blueprint.png" 
+						alt="Logo Proyecto">
+					</section>
+					<section>
+						<h3>Server software patterns</h3>
+						<p>
+							The server was structured by independent layers. Each layer interact only with the above and below layer.
+							
+						</p>
+						<div style="background-color: rgba(0, 0, 0, 0.9); 
+					color: #fff; padding: 20px;" class="fragment fade-in">
+						<small>
+							This way of server organization permits conceptualize the problems in smaller and simpler parts. 
+						</small>
+						</div>
+						<img id="img-transp-down-left" style="width: 30%; left: 68%;" class="img-backgr"
+						data-src="./assets/imagenes/pipes.gif" 
+						alt="Logo Proyecto">
+					</section>
+					<section>
+						<h3>The REST API</h3>
+						<p>
+							This communication pattern it's used to define the system implementation of nets and distributed systems.
+
+						</p>
+						<p>
+							It's very used today and it's based on CRUD applications that use http protocol.
+						</p>
+						<div style="background-color: rgba(0, 0, 0, 0.9); 
+					color: #fff; padding: 20px;" class="fragment fade-in">
+						<small>
+							We choose it, because most of I.T. teams, knows how to use this kind of comunication pattern. 
+						</small>
+						</div>
+						
+						<img id="img-transp-down-left" style="width: 30%;top: 70%;" class="img-backgr"
+						data-src="./assets/imagenes/duke_lupa_nodos.png" 
+						alt="Logo Proyecto">
+					</section>
+					<section>
+						<h3>DAO</h3>
+						<p>
+							It's an Object Data Access, a component that brings us a common interface and oneo or more data sotorage devices.
+						
+						</p>
+
+						<p>
+							They are used to isolate the persistence technology layer from the application.
+						</p>
+						
+						<img id="img-transp-down-left" style="width: 30%; top: -20%;" class="img-backgr"
+						data-src="./assets/imagenes/duke_archiv.png" 
+						alt="Logo Proyecto">
+					</section>
+					<section data-background="./assets/imagenes/modeloA_blk.png">
+					
+						<div class="fragment fade-in-then-out" style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h3>The data model</h3>
+							<p>
+								The hospital's technological ecosystem make us to use the relational data model.
+							</p>
+							<p>We design the next schema ...
+							</p>
+						</div>
+						<div  class="fragment fade-in" style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<img id="img-complete-width" style="width: 70%;" class="img-backgr"
+							data-src="./assets/imagenes/modelo.png" 
+							alt="Logo Proyecto">
+						</div>
+						
+					</section>
+					
+					<section>
+						<h3>The final Server Structure</h3>
+						
+						
+						<img id="img-complete-width" class="img-backgr"
+						style="width: 70%;"data-src="./assets/imagenes/server_schema.png" 
+										alt="Logo Proyecto">
+										
+					</section>
+					
+				</section>
+				<section>
+				<section>
+					<h2>Client features</h2>
+					<h3>(Web)</h3>
+					<p>
+						To build the User Interface, we choose to accomplish different requirements. 
+					</p>
+					
+					
+					<small class="fragment fade-in">
+						For the Front-End we try ...
+					</small>
+					<img id="img-transp-down-left" style="width: 30%; top: 8%; left: 80%;" class="img-backgr"
+					data-src="./assets/imagenes/duke_frontend.png" 
+					alt="Logo Proyecto">
+				</section>
+				<section>
+					<h3>Reuse elements</h3>
+					<p>
+						Allowing a more flexible and quick development.
+					</p>
+					<p>
+						Reuse the code in different aplications, made the UI design consistent between apps.
+					</p>
+					<small class="fragment fade-in">We'll use Web Components to accomplish this goal
+					</small>
+				<!--	<img id="img-transp-down-left" class="img-backgr"
+					data-src="./assets/imagenes/Plug_npm_nodejs.png" 
+					alt="Logo Proyecto">-->
+				</section>
+				<section>
+					<h3>Order and scalability</h3>
+					<p>
+						The client structure must permit an easy scalability of the app. 
+					</p>
+					<p>
+						The addition of new parts must be as much independent as possible and not interfere with the already created code.
+					</p>
+					<small class="fragment fade-in">
+						We use frameworks, modules and data tree structures to get the objective.
+					</small>
+					<!--<img id="img-transp-down-left" class="img-backgr"
+					data-src="./assets/imagenes/Plug_npm_nodejs.png" 
+					alt="Logo Proyecto">-->
+				</section>
+				<section>
+					<h3>Platform Flexibility</h3>
+					<p>
+						Must be easy to move the app to any device, even if it doesn't have a web browser.
+						
+					</p>
+					<div style="background-color: rgba(0, 0, 0, 0.9); 
+					color: #fff; padding: 20px;" class="fragment fade-in">
+					<small>
+						The tools of most frontend frameworks allow the build to mobile apps, desktop, Progresive Web Apps, microcontroller development, and even voice assistant development.
+						
+					</small></div>
+					<img id="img-transp-down-left" style="width: 50%; top: 40%;" class="img-backgr"
+					data-src="./assets/imagenes/duke_packages_js.png" 
+					alt="Logo Proyecto">
+				</section>
+
+
+			</section>
+
+				<section>
+					<section>
+					<h2>Developmnet environment</h2><h4>Backend</h4>
+					<p>
+						To build the backend we use this tools
+					</p>
+					<img id="img-transp-down-left" style="top: 28%; left: -1%; width: 25%;" class="img-backgr"
+					data-src="./assets/imagenes/DukeTools.png" 
+					alt="Logo Proyecto">
+			
+					
+					</section>
+					<section>
+						<h3>Open JDK</h3>
+						<p>
+						The Java "Open Source" SDK.	
+						</p>
+						
+						<img id="img-transp-down-left" style="left: 80%;" class="img-backgr"
+						data-src="./assets/imagenes/duke-java.png" 
+						alt="Logo Proyecto">
+						<small>
+						<a href="#/8/11">Web</a>
+						</small>
+						
+						</section>
+						<section>
+							<h3>Eclipse IDE</h3>
+							<p>
+								Powerfull development environment with lots of tools integrated.	
+							</p>
+							<img id="img-transp-down-left" class="img-backgr"
+							data-src="./assets/imagenes/duke-logos.png" 
+							alt="Logo Proyecto">
+							<small>
+								<a href="#/8/12">Web</a>
+							</small>
+							
+							</section>
+							<section>
+								<h3>Apache Tomcat Server</h3>
+								<p>
+									A web container with servlet and JSPs support.
+								</p>
+								<img id="img-transp-down-left" style="left: 30%; top: 80%; width: 40%;" class="img-backgr"
+								data-src="./assets/imagenes/tomcat_duke2.png" 
+								alt="Logo Proyecto">
+								<small>
+									<a href="#/8/13">Web</a>
+								</small>
+								
+							</section>
+							<section>
+								<h3>Postgre SQL</h3>
+								<p>
+									A free and Open Source Relational Database Management System.	
+								</p>
+								<img id="img-transp-down-left" style="width: 30%;" class="img-backgr"
+								data-src="./assets/imagenes/duke-african-elephant-2.png" 
+								alt="Logo Proyecto">
+						<small>
+									<a href="#/8/14">Web</a>
+								</small>
+								
+							</section>
+							<section>
+								<h3>Libs</h3>
+								<p>
+									We use this libs to develop the Server.
+								
+								</p>
+
+								<p>
+							<span style="display: inline-block;" class="fragment fade-right">
+								 REST/JAX-RS implementation: </span>
+							<span style="display: inline-block;" class="fragment fade-up">
+								<a href="#/8/15">JERSEY</a> </span>
+								</p>
+
+								<p>
+							<span style="display: inline-block;" class="fragment fade-right">
+								 JSON serialization: </span>
+							<span style="display: inline-block;" class="fragment fade-up">
+								<a href="#/8/16">GSON</a> </span>
+								</p>
+
+								<p>
+									<span style="display: inline-block;" class="fragment fade-right">
+										 smtp email: </span>
+									<span style="display: inline-block;" class="fragment fade-up">
+										<a href="#/8/17">JavaMail</a> </span>
+								</p>
+
+							
+
+								<img id="img-transp-down-left" style="left: 87%; top: 49%;" class="img-backgr"
+								data-src="./assets/imagenes/Duke_libs.png" 
+								alt="Logo Proyecto">
+						
+								
+							</section>
+							<section>
+								<h4>REST service code example</h4>
+								<p>
+									With <a href="#/8/15">Jersey</a> we can build a REST node very easily.
+							
+								<pre><code class="java" data-trim data-line-numbers="1,2|4,5|6-8|6-13">
+	import javax.ws.rs.*;
+	import es.gva.san.lafe.edoz.app.*;
+
+	@Path("/rest")
+	public class PublicAPI {
+	 @Path("/test")
+	 @GET
+	 @Produces({"application/json"})
+	 public String getTest() {
+		// conexión con nuestra aplicación
+		String pattrn = "{ \"wooow\":\"%s\"}";
+		return String.format(pattrn , miAppGetResults());
+	  }
+	}
+								</code></pre>
+								
+								</section>
+								<section>
+									
+									<h3>App Structure</h3>
+									<p>
+										At the end, the (servlet) app with Jersey get this shape.	
+									</p>
+									
+									<img id="img-complete-width" class="img-backgr"
+									style="width: 70%; top: 10%;"
+									data-src="./assets/imagenes/jersey_app.png" 
+									alt="Logo Proyecto">
+							
+								</section>
+							
+						
+							<!--
+							<section>
+								<h3>Servicio REST</h3>
+								<p>
+									Se implementaría con Jersey que no es más que, "Una
+									implementacion del patrón" usando las especificaciones
+									JAVA JAX-RS.
+							   </p>
+								
+								<img id="img-transp-down-left" class="img-backgr"
+								data-src="./assets/imagenes/duke_camata.png" 
+								alt="Logo Proyecto">
+							</section>-->
+				</section>
+			
+			
+
+				<section>
+					<section>
+					<h2>Development environment</h2><h4>Frontend</h4>
+					<p>
+						To build the client we use this tools. 
+					</p>
+					<img id="img-transp-down-left" style="width: 30%; top: 80%; left: 60%;" class="img-backgr"
+					data-src="./assets/imagenes/Plug_npm_nodejs.png" 
+					alt="Logo Proyecto">
+			
+					
+					</section>
+					<section>
+						<h3>Nodejs</h3>
+						<p>
+							The execution engine. 
+						</p>
+						<p></p>
+						Execute JavaScript code outside the browser. It's equivalent to an interpreted language.  
+						</p>
+						<small class="fragment fade-in">
+							It was used to run the framework and tools. 
+					</small>
+						
+						<pre><code class="zsh" data-trim data-trim>
+							echo 'console.log("Hola mundo con JavaScript");' | node
+							>> Hola mundo con JavaScript
+									
+							</code></pre>
+						
+						</section>
+						<section>
+							<h3>npm</h3>
+							<p>
+								Node package manager, to admin libs and dependencies.
+							</p>
+							
+							<p>
+								Like "make" does with C language. 
+							</p>
+							<p>Rules:
+							</p>
+							
+						
+								<pre><code class="zsh" data-trim data-trim >
+								npm &lt;command&gt;
+								npm &lt;command&gt; -h  quick help on &lt;command&gt;
+								npm -l            display full usage info
+								npm help &lt;term&gt;   search for help on &lt;term&gt;
+								npm help npm      involved overview
+										
+								</code></pre>
+								<small class="fragment fade-in">Also download programs, frameworks, libs and dependencies from the web.</small>
+							</section>
+							<section>
+								<h3>Libs</h3>
+								<p>
+								To build the client we use these packages	
+								</p>
+
+								<p>
+									<small>
+									<span style="display: inline-block;" class="fragment fade-right">
+										 Form builder and checker: </span>
+									<span style="display: inline-block;" class="fragment fade-up">
+										<a href="#/8/19">@angular/forms</a> </span>
+									</small></p>
+								<p><small>
+									<span style="display: inline-block;" class="fragment fade-right">
+										 Navigation admin: </span>
+									<span style="display: inline-block;" class="fragment fade-up">
+										<a href="#/8/20">@angular/router</a> </span>
+									</small></p>
+								<p><small>
+									<span style="display: inline-block;" class="fragment fade-right">
+										 Graph creation: </span>
+									<span style="display: inline-block;" class="fragment fade-up">
+										<a href="#/8/22">@swimlane/ngx-charts</a> </span>
+									</small></p>
+									<p><small>
+										<span style="display: inline-block;" class="fragment fade-right">
+											 CSS clases to adapt the view to the screen: </span>
+										<span style="display: inline-block;" class="fragment fade-up">
+											<a href="#/8/24"> bootstrap</a> </span>
+									</small></p>	
+
+
+								<img id="img-transp-down-left" style="width: 40%; top: 50%; left: -16%;" class="img-backgr"
+								data-src="./assets/imagenes/duke_log_ok.png" 
+								alt="Logo Proyecto">
+						
+								
+							</section>
+							
+							<section>
+								<h3>Angular 2</h3>
+								<p>
+									It's the framework choosed to build "SPA" apps. 
+									(Single Page Aplications) 
+								</p>
+								<p>
+									It gives us a bunch of tools to help us to build, ninify and test this apps. 
+								</p>
+								
+								<img id="img-transp-down-left" style="top: -25%; width: 25%; left: 70%;" class="img-backgr"
+								data-src="./assets/imagenes/duke_ang_icon.png" 
+								alt="Logo Proyecto">
+						
+								
+								</section>
+								<section>
+									<h4>Angular CLI</h4>
+									<p>
+										A console line interface used to automating tasks. 
+									</p>
+									<pre><code class="zsh" data-trim data-trim>
+										ng generate component miprimercomponente
+												
+										</code></pre>
+									<p>
+										It uses webpack in background and can build very complex projects.
+									</p>
+									<pre><code class="zsh" data-trim data-trim >
+										ng build --prod --base-href ./
+												
+										</code></pre>
+									
+									</section>
+									<section>
+										<h4>Component Structure</h4>
+										<p>
+											Angular take advantage of TypeScript capabilities to 
+											implement static types to build our frontend app.
+											
+										<pre><code class="ts" data-trim data-line-numbers="1|2-10|11-15">
+											Import { Component} from '@angular/core'; 
+											@Component({
+												selector: 'cursos',
+												template: 
+												`&lt;h3&gt;{{titulo}}&lt;/h3&gt;
+												 &lt;ul&gt;
+												    &lt;li *ngFor="let curso of cursos"&gt;
+														{{ curso }}
+													&lt;/li&gt;
+												 &lt;/ul&gt;` })
+											export class CursosComponent{
+												titulo: string = “Lista de cursos”;
+												cursos: string[] = [“curso1”,”curso2”,”curso3”]
+											}
+										</code></pre>
+										
+										</section>
+
+								<section>
+									<h2>Vs Codium</h2>
+									<p>
+										It's a Fork of VS Code and brings intellisense capabilities for TypeScript.
+
+									</p>
+									<p>
+										It has an embedded terminal too.
+									</p>
+									<small class="fragment">
+										That's why people reffers it as the Web IDE.
+									</small>
+									<img id="img-transp-down-left" style="left: 80%; top: 80%;" class="img-backgr"
+									data-src="./assets/imagenes/duke_craft.png" 
+										alt="Logo Proyecto">
+									
+									</section>
+
+									<section>
+										
+										
+										<img id="img-complete-width" 
+										data-src="./assets/imagenes/vscodcap.png" 
+										alt="Logo Proyecto">
+										<img id="img-transp-down-left" style="left: 12%; width: 40%; top: 50%; z-index: 3;" class="img-backgr" style="z-index: 1;"
+										data-src="./assets/imagenes/duke_pizarra.png" 
+										alt="Logo Proyecto">
+								
+										
+										</section>
+				</section>
+				
+
+			
+			<section>
+				<section>
+					<h2>App demos</h2>
+					<p>
+						Now, we'r going to see a video demo of the app running. 
+				</p>
+					<img id="img-transp-down-left" style="top: 90%; left: 40%; width: 25%;" class="img-backgr"
+									data-src="./assets/imagenes/duke_video.png" 
+									alt="Logo Proyecto">
+					</section>
+					<!--	
+			<section data-background="https://media.giphy.com/media/dbtDDSvWErdf2/giphy.gif">
+					<h2>Fin!</h2>
+				</section>-->
+			</section>
+			<section data-background-video="./assets/videos/edoz_video_comp.mp4" data-background-color="#000000">
+				<div style="background-color: rgba(0, 0, 0, 0.9); 
+				color: #fff; padding: 20px;" class="fragment fade-out">
+					<p>Video in Spanish</p>
+					<img id="img-transp-down-left" style="top: 80%;" class="img-backgr"
+					data-src="./assets/imagenes/duke_camera.png" 
+					alt="Logo Proyecto">	
+				</div>
+					
+					
+			</section>
+
+			<section>
+				<section>
+					<h2>Resources</h2>
+					<p>
+						Links, reference books and other sources.
+					</p>
+					</section>
+					<img id="img-compuesta-3" style="width: 10%; left: 80%; top: 60%;"
+					data-src="./assets/imagenes/dj.png" 
+					class="img-bgr"
+					alt="Logo Proyecto">
+					<section>
+						<h3>The Project itself</h3>
+						<small>
+						<a href="./documentos/entregas/EdOz.pdf"
+						 target="_blank">| Project's report (only in spanish)</a>
+						<a href="./assets/videos/edoz_video_comp.mp4"  target="_blank">| Video</a> 
+						<!-- <a href="#" target="_blank">| Despliegue de la aplicación </a>-->
+						<a href="./api/public/api_docs.html"
+						 target="_blank">| API's documentation </a>
+						<a href="./documentos/entregas/presentacion_propuesta.pdf"
+						 target="_blank">| Technology analysis (only in spanish)|</a>
+					</small>
+	
+						</section>
+
+					<section>
+					<h3>Web resources</h3>
+					<small>
+					<a href="http://mestreacasa.gva.es/web/4602504000" target="_blank">| Abastos</a>
+					<a href="http://www.lafe.san.gva.es/" target="_blank">| La Fe</a>
+					<a href="http://llucbrell.github.io/PWCV/"  target="_blank">| Autor</a> 
+					<a href="https://openjdk.java.net/" target="_blank">| Open JDK</a>
+					<a href="https://www.eclipse.org/"  target="_blank">| Eclipse</a> 
+					<a href="https://tomcat.apache.org/" target="_blank">| Tomcat</a>
+					<a href="https://www.postgresql.org/"  target="_blank">| Postgre SQL</a> 
+					<a href="https://eclipse-ee4j.github.io/jersey/"  target="_blank">| Jersey</a> 
+					<a href="https://github.com/google/gson/" target="_blank">| Gson</a>
+					<a href="https://javaee.github.io/javamail/"  target="_blank">| JavaMail</a> 
+					<a href="https://nodejs.org/en/" target="_blank">| Node.Js</a>
+					<a href="https://www.npmjs.com/" target="_blank">| Npm</a>
+					<a href="https://www.typescriptlang.org/" target="_blank">| TypeScript</a>
+					<a href="https://angular.io/"  target="_blank">| Angular</a> 
+					<a href="https://angular.io/api/forms"  target="_blank">| Ng Forms</a> 
+					<a href="https://angular.io/api/router" target="_blank">| Ng Router</a>
+					<a href="https://cli.angular.io/"  target="_blank">| Angular CLI</a> 
+					<a href="https://swimlane.gitbook.io/ngx-charts/" target="_blank">| Ngx Charts</a>
+					<a href="https://vscodium.com/"  target="_blank">| VsCodium |</a> 
+					</small>
+					
+					</section>
+
+
+					<section>
+						<h3>Bibliography I</h3>
+						<p>
+						<small><a href="https://www.amazon.com/ng-book-Complete-Angular-Nate-Murray/dp/0991344618" target="_blank">	
+						ng-book The Complete Book on Angular 4. Murray Nate, Coury Felipe, Lerner Ari, and Taborda Carlos. 2017. San Francisco, California
+						</a></small></p>
+						<p>
+						<small><a href="https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN" target="_blank">	
+						Angular 2 From Theory To Practice. Hussain Asim. 2016. S.P. S.ISBN
+						</a></small></p>
+						<p>
+						<small><a href="https://www.oreilly.com/library/view/pro-angular-second/9781484223079/" target="_blank">	
+						Pro Angular, Second Edition. Freeman Adam. 2017. MILTON KEYNES MK6 3PA, United Kingdom. ISBN-13 (pbk): 978-1-4842-2306-2
+						</a></small>
+						</p>
+						<p>
+						<small><a href="https://www.apress.com/gp/book/9781484226643" target="_blank">	
+						Pro RESTful APIs: Design, Build and Integrate with REST, JSON, XML and JAX-RS. Sanjay Patni. Santa Clara, California, USA. 2017.ISBN-13 (pbk): 978-1-4842-2664-3						</a></small></p>
+						<p>
+						<small><a href="https://www.apress.com/gp/book/9781430267904" target="_blank">	
+						Pro TypeScript: Application-Scale JavaScript Development. Fenton Steve. 2018. United Kingdom. ISBN-13 (pbk): 978-1-4842-3248-4						
+						</a></small></p>
+						<p>
+						<small><a href="https://www.packtpub.com/application-development/developing-restful-web-services-jersey-20" target="_blank">	
+						Developing RESTful Web Services with Jersey 2.0. Sunil Gulabani. 2014. Birmingham B3 2PB, UK. ISBN 978-1-78328-829-8						
+						</a></small></p>
+						<small><a href="https://www.amazon.com/Complete-Log4j-Manual-Ceki-Gulcu/dp/2970036908" target="_blank">	
+							The Complete log4j Manual. Ceki Gülcü. 2002. S.P. S.ISBN
+						</a></small></p>
+					</section>
+						<section>
+							<h3>Bibliography II</h3>
+				
+						
+						<small><a href="https://www.oreilly.com/library/view/data-visualization-with/9781457189869/" target="_blank">	
+							Data Visualization with JavaScript. Stephen A. Thomas. 2015. USA. ISBN-10: 1-59327-605-2, ISBN-13: 978-1-59327-605-8						
+						</a></small></p>
+						<small><a href="https://tomcat.apache.org/tomcat-9.0-doc/" target="_blank">	
+							Apache Tomcat's Documentation. S.F. The Apache Software Foundation. https://tomcat.apache.org/tomcat-9.0-doc/						
+						</a></small></p>
+						<small><a href="https://stackoverflow.com/questions" target="_blank">	
+							Q&A forums about Java, TypeScript, Angular 2 y Apache Tomcat. S.F. StackOverflow. https://stackoverflow.com/questions
+						</a></small></p>
+						<small><a href="https://help.eclipse.org/2019-12/index.jsp" target="_blank">	
+							Eclipse's Documentation. 2019. Eclipse Foundation. https://help.eclipse.org/2019-12/index.jsp
+						</a></small></p>
+						<small><a href="https://angular.io/docs/" target="_blank">	
+							Angular's Documentation. S.F. Google. https://angular.io/docs/
+						</a></small></p>
+						<small><a href="https://linux.die.net/man/" target="_blank">	
+							Online and terminal Linux man pages. S.F. Linux. https://linux.die.net/man/
+						</a></small></p>
+
+
+
+						</section>
+
+
+
+
+					<section>
+						<h3>Iframes</h3>
+						<p>
+							The following slides show integrated links and resources used in the presentation.
+						</p>
+						
+						</section>
+
+				<section data-background-iframe="./documentos/entregas/EdOz.pdf" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0;
+						box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+						background-color: rgba(0, 0, 0, 0.9);
+						 color: #fff; padding: 20px;
+						 font-size: 20px; text-align: left;">
+							<h3>Project's Report</h3>
+						</div>
+					</section>
+					<section data-background-iframe="./documentos/entregas/presentacion_propuesta.pdf" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0;
+						box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+						background-color: rgba(0, 0, 0, 0.9);
+						 color: #fff; padding: 20px;
+						 font-size: 20px; text-align: left;">
+							<h3>Technology analysis</h3>
+						</div>
+					</section>	
+
+				<section data-background-iframe="http://mestreacasa.gva.es/web/4602504000" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>School</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="http://mestreacasa.gva.es/web/4602504000" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="http://www.lafe.san.gva.es/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Hospital</h3>
+
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="http://www.lafe.san.gva.es/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="http://llucbrell.github.io/PWCV/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Author</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="http://llucbrell.github.io/PWCV/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://openjdk.java.net/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Open JDK</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://openjdk.java.net/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://www.eclipse.org/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Eclipse</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://www.eclipse.org/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://tomcat.apache.org/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Tomcat</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://tomcat.apache.org/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://www.postgresql.org/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>postgre SQL</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://www.postgresql.org/" target="blank">Aquí</a></p>
+				</section>
+				<section data-background-iframe="https://eclipse-ee4j.github.io/jersey/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Jersey</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://eclipse-ee4j.github.io/jersey/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://github.com/google/gson/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>GSON</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://github.com/google/gson/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://javaee.github.io/javamail/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Java Mail</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://javaee.github.io/javamail/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://angular.io/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Angular</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://angular.io/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://angular.io/api/forms" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Angular Forms</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://angular.io/api/forms" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://angular.io/api/router" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Angular Router</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://angular.io/api/router" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://cli.angular.io/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Angular CLI</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://cli.angular.io/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://swimlane.gitbook.io/ngx-charts/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>NGX Charts</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://swimlane.gitbook.io/ngx-charts/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://vscodium.com/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>VS Codium</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://vscodium.com/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://getbootstrap.com/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Bootstrap</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://getbootstrap.com/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://nodejs.org/en/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Node.JS</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://nodejs.org/en/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://www.npmjs.com/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>NPM</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://www.npmjs.com/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="https://www.typescriptlang.org/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>TypeScript</h3>
+						<p>If this webage doesn't admit iframes, click this link to visit</p>
+						<p><a href="https://www.typescriptlang.org/" target="blank">Aquí</a></p>
+					</div>
+				</section>
+				<section data-background-iframe="./api/public/api_docs.html" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;
+					box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+					background-color: rgba(0, 0, 0, 0.9);
+					 color: #fff; padding: 20px;
+					 font-size: 20px; text-align: left;">
+						<h3>Documentación del API</h3>
+					</div>
+				</section>
+				
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+				
+				<section data-background="https://media.giphy.com/media/7LO7q5KcXawaQ/giphy.gif">
+					<h2>The End!</h2>
+				</section>
+			</section>
+			<section data-background="https://media.giphy.com/media/28HuTvEHje7v1ngGAm/giphy.gif">
+				<h2>The End!</h2>
+			</section>
+
+
+
+
+
+				<!-- FIN  -->
+		
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
